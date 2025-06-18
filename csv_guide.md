@@ -1,109 +1,109 @@
 
-| Column |
-|--------|
-| `publisher`|
-| `imprint` |
-| `work_type` |
-| `work_status` |
-| `title` |
-| `subtitle`|
-| `edition` |
-| `publication_date` |
-| `withdraw_date` |
-| `place_of_publication` |
-| `cover_url` |
-| `cover_caption` |
-| `doi` |
-| `lccn` |
-| `oclc_number` |
-| `internal_reference` |
-| `page_count` |
-| `page_breakdown` |
-| `first_page` |
-| `last_page` |
-| `image_count` |
-| `table_count"` |
-| `audio_count` |
-| `video_count` |
-| `license` |
-| `copyright_holder` |
-| `landing_page` |
-| `short_abstract` |
-| `long_abstract` |
-| `general_note` |
-| `bibliography_note` |
-| `table_of_content` |
-| `contributor_n_name` |
-| `contributor_n_role` |
-| `contribution_1_main_contribution` |
-| `contributor_1_biography` |
-| `contributor_1_orcid` |
-| `contributor_1_website` |
-| `contributor_1_affiliation_1_position` |
-| `contributor_1_affiliation_1_institution_name` |
-| `contributor_1_affiliation_1_institution_ror` |
-| `contributor_1_affiliation_2_position` |
-| `contributor_1_affiliation_2_institution_name` |
-| `contributor_1_affiliation_2_institution_ror` |
-| `original_language` |
-| `translated_from_language` |
-| `translated_into_language` |
-| `thema_subjects` |
-| `bic_subjects` |
-| `bisac_subjects` |
-| `keywords` |
-| `publication_paperback_isbn` |
-| `publication_paperback_width_mm` |
-| `publication_paperback_width_in` |
-| `publication_paperback_height_mm` |
-| `publication_paperback_height_in` |
-| `publication_paperback_depth_mm` |
-| `publication_paperback_depth_in` |
-| `publication_paperback_weight_g` |
-| `publication_paperback_weight_oz` |
-| `publication_paperback_price_1_currency_code` |
-| `publication_paperback_price_1_unit_price` |
-| `publication_paperback_price_2_currency_code` |
-| `publication_paperback_price_2_unit_price` |
-| `publication_hardback_isbn` |
-| `publication_hardback_width_mm` |
-| `publication_hardback_width_in` |
-| `publication_hardback_height_mm` |
-| `publication_hardback_height_in` |
-| `publication_hardback_depth_mm` |
-| `publication_hardback_depth_in` |
-| `publication_hardback_weight_g` |
-| `publication_hardback_weight_oz` |
-| `publication_hardback_price_1_currency_code` |
-| `publication_hardback_price_1_unit_price` |
-| `publication_pdf_isbn` |
-| `publication_pdf_location_1_landing_page` |
-| `publication_pdf_location_1_full_text_url` |
-| `publication_pdf_location_1_platform` |
-| `publication_pdf_location_2_landing_page` |
-| `publication_pdf_location_2_full_text_url` |
-| `publication_pdf_location_2_platform` |
-| `publication_epub_isbn` |
-| `publication_epub_location_1_landing_page` |
-| `publication_epub_location_1_full_text_url` |
-| `publication_epub_location_1_platform` |
-| `publication_epub_price_1_currency_code` |
-| `publication_epub_price_1_unit_price` |
-| `publication_mobi_isbn` |
-| `publication_mobi_location_1_landing_page` |
-| `publication_mobi_location_1_full_text_url` |
-| `publication_mobi_location_1_platform` |
-| `publication_azw3_isbn` |
-| `publication_azw3_location_1_landing_page` |
-| `publication_azw3_location_1_full_text_url` |
-| `publication_azw3_location_1_platform` |
-| `series_name` |
-| `series_issn` |
-| `series_issue_number` |
-| `funding_program` |
-| `funding_project` |
-| `funding_grant_number` |
-| `funding_jurisdiction` |
-| `funding_institution_name` |
-| `funding_institution_ror` |
-| `book_id` |
+| Column | Description | Example |
+|--------|-------------|---------|
+| `publisher`| Publisher Name. | My Publisher |
+| `imprint` | Imprint Name. | My Publisher Imprint |
+| `work_type` | Type of the work. Accepted values: `BOOK_CHAPTER`; `MONOGRAPH`; `EDITED_BOOK`; `TEXTBOOK`; `JOURNAL_ISSUE`; `BOOK_SET` | TEXTBOOK |
+| `work_status` | Status of the work. Accepted values: `FORTHCOMING`; `ACTIVE`; `WITHDRAWN`; `SUPERSEDED`; `POSTPONED_INDEFINITELY`; `CANCELLED` | ACTIVE |
+| `title` | The title of the Work. | My Work Title |
+| `subtitle`| The subtitle of the Work. | My Work itle |
+| `edition` |  |  |
+| `publication_date` |  |  |
+| `withdraw_date` |  |  |
+| `place_of_publication` |  |  |
+| `cover_url` |  |  |
+| `cover_caption` |  |  |
+| `doi` |  |  |
+| `lccn` |  |  |
+| `oclc_number` |  |  |
+| `internal_reference` |  |  |
+| `page_count` |  |  |
+| `page_breakdown` |  |  |
+| `first_page` |  |  |
+| `last_page` |  |  |
+| `image_count` |  |  |
+| `table_count"` |  |  |
+| `audio_count` |  |  |
+| `video_count` |  |  |
+| `license` |  |  |
+| `copyright_holder` |  |  |
+| `landing_page` |  |  |
+| `short_abstract` |  |  |
+| `long_abstract` |  |  |
+| `general_note` |  |  |
+| `bibliography_note` |  |  |
+| `table_of_content` |  |  |
+| `contributor_n_name` |  |  |
+| `contributor_n_role` |  |  |
+| `contribution_1_main_contribution` |  |   |
+| `contributor_1_biography` |  |   |
+| `contributor_1_orcid` |  |  |
+| `contributor_1_website` |  |  |
+| `contributor_1_affiliation_1_position` |  |  |
+| `contributor_1_affiliation_1_institution_name` |  |  |
+| `contributor_1_affiliation_1_institution_ror` |  |  |
+| `contributor_1_affiliation_2_position` |  |  |
+| `contributor_1_affiliation_2_institution_name` |  |  |
+| `contributor_1_affiliation_2_institution_ror` |  |  |
+| `original_language` |  |  |
+| `translated_from_language` |  |  |
+| `translated_into_language` |  |  |
+| `thema_subjects` |  |  |
+| `bic_subjects` |  |  |
+| `bisac_subjects` |  |  |
+| `keywords` |  |  |
+| `publication_paperback_isbn` |  |  |
+| `publication_paperback_width_mm` |  |  |
+| `publication_paperback_width_in` |  |  |
+| `publication_paperback_height_mm` |  |  |
+| `publication_paperback_height_in` |  |  |
+| `publication_paperback_depth_mm` |  |  |
+| `publication_paperback_depth_in` |  |  |
+| `publication_paperback_weight_g` |  |  |
+| `publication_paperback_weight_oz` |  |  |
+| `publication_paperback_price_1_currency_code` |  |  |
+| `publication_paperback_price_1_unit_price` |  |  |
+| `publication_paperback_price_2_currency_code` |  |  |
+| `publication_paperback_price_2_unit_price` |  |  |
+| `publication_hardback_isbn` |  |  |
+| `publication_hardback_width_mm` |  |  |
+| `publication_hardback_width_in` |  |  |
+| `publication_hardback_height_mm` |  |  |
+| `publication_hardback_height_in` |  |  |
+| `publication_hardback_depth_mm` |  |  |
+| `publication_hardback_depth_in` |  |  |
+| `publication_hardback_weight_g` |  |  |
+| `publication_hardback_weight_oz` |  |  |
+| `publication_hardback_price_1_currency_code` |  |  |
+| `publication_hardback_price_1_unit_price` |  |  |
+| `publication_pdf_isbn` |  |  |
+| `publication_pdf_location_1_landing_page` |  |  |
+| `publication_pdf_location_1_full_text_url` |  |  |
+| `publication_pdf_location_1_platform` |  |  |
+| `publication_pdf_location_2_landing_page` |  |  |
+| `publication_pdf_location_2_full_text_url` |  |  |
+| `publication_pdf_location_2_platform` |  |  |
+| `publication_epub_isbn` |  |  |
+| `publication_epub_location_1_landing_page` |  |  |
+| `publication_epub_location_1_full_text_url` |  |  |
+| `publication_epub_location_1_platform` |  |  |
+| `publication_epub_price_1_currency_code` |  |  |
+| `publication_epub_price_1_unit_price` |  |  |
+| `publication_mobi_isbn` |  |  |
+| `publication_mobi_location_1_landing_page` |  |  |
+| `publication_mobi_location_1_full_text_url` |  |  |
+| `publication_mobi_location_1_platform` |  |  |
+| `publication_azw3_isbn` |  |  |
+| `publication_azw3_location_1_landing_page` |  |  |
+| `publication_azw3_location_1_full_text_url` |  |  |
+| `publication_azw3_location_1_platform` |  |  |
+| `series_name` |  |  |
+| `series_issn` |  |  |
+| `series_issue_number` |  |  |
+| `funding_program` |  |  |
+| `funding_project` |  |  |
+| `funding_grant_number` |  |  |
+| `funding_jurisdiction` |  |  |
+| `funding_institution_name` |  |  |
+| `funding_institution_ror` |  |  |
+| `book_id` |  |  |
