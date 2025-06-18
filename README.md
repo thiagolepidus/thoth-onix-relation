@@ -2,6 +2,13 @@
 
 This document provides a comprehensive mapping between ONIX 3.0 XML elements and Thoth model attributes based on the mapper classes in this project.
 
+## Notes
+
+1. **XPath Context**: All XPaths are absolute paths starting from the ONIX root element and leading to the Product element and beyond.
+2. **Namespace**: All ONIX elements use the namespace prefix `onix:` referring to `http://ns.editeur.org/onix/3.0/reference`.
+3. **Root Structure**: The complete ONIX XML structure starts with `/onix:ONIXMessage/onix:Product/` for all product-related data.
+8. **Multiple Elements**: Some elements like Contributors, Languages, Subjects can appear multiple times within a Product.
+
 ## Work Model Mappings
 
 | Thoth Attribute | ONIX XPath | Notes |
@@ -128,83 +135,3 @@ This document provides a comprehensive mapping between ONIX 3.0 XML elements and
 | `projectShortName` | `/onix:ONIXMessage/onix:Product/onix:PublishingDetail/onix:Publisher[onix:PublishingRole="16"]/onix:Funding/onix:FundingIdentifier[onix:FundingIDType="01" and onix:IDTypeName="projectshortname"]/onix:IDValue` | Project short name/acronym |
 | `grantNumber` | `/onix:ONIXMessage/onix:Product/onix:PublishingDetail/onix:Publisher[onix:PublishingRole="16"]/onix:Funding/onix:FundingIdentifier[onix:FundingIDType="01" and onix:IDTypeName="grantnumber"]/onix:IDValue` | Grant number |
 | `jurisdiction` | `/onix:ONIXMessage/onix:Product/onix:PublishingDetail/onix:Publisher[onix:PublishingRole="16"]/onix:Funding/onix:FundingIdentifier[onix:FundingIDType="01" and onix:IDTypeName="jurisdiction"]/onix:IDValue` | Funding jurisdiction |
-
-## ONIX Code Mappings
-
-### Work Status Codes
-- `01` → `WORK_STATUS_CANCELLED`
-- `02` → `WORK_STATUS_FORTHCOMING`
-- `03` → `WORK_STATUS_POSTPONED_INDEFINITELY`
-- `04` → `WORK_STATUS_ACTIVE`
-- `08` → `WORK_STATUS_SUPERSEDED`
-- `11` → `WORK_STATUS_WITHDRAWN`
-
-### Publication Type Codes
-- `BC` → `PUBLICATION_TYPE_PAPERBACK`
-- `BB` → `PUBLICATION_TYPE_HARDBACK`
-- `E107` → `PUBLICATION_TYPE_PDF`
-- `E105` → `PUBLICATION_TYPE_HTML`
-- `E113` → `PUBLICATION_TYPE_XML`
-- `E101` → `PUBLICATION_TYPE_EPUB`
-- `E127` → `PUBLICATION_TYPE_MOBI`
-- `E116` → `PUBLICATION_TYPE_AZW3`
-- `E104` → `PUBLICATION_TYPE_DOCX`
-- `E100` → `PUBLICATION_TYPE_FICTION_BOOK`
-- `A103` → `PUBLICATION_TYPE_MP3`
-- `A104` → `PUBLICATION_TYPE_WAV`
-
-### Contributor Role Codes
-- `A01` → `CONTRIBUTION_TYPE_AUTHOR`
-- `B01` → `CONTRIBUTION_TYPE_EDITOR`
-- `B06` → `CONTRIBUTION_TYPE_TRANSLATOR`
-- `A13` → `CONTRIBUTION_TYPE_PHOTOGRAPHER`
-- `A12` → `CONTRIBUTION_TYPE_ILLUSTRATOR`
-- `B25` → `CONTRIBUTION_TYPE_MUSIC_EDITOR`
-- `A23` → `CONTRIBUTION_TYPE_FOREWORD_BY`
-- `A15` → `CONTRIBUTION_TYPE_PREFACE_BY`
-- `A30` → `CONTRIBUTION_TYPE_SOFTWARE_BY`
-- `A51` → `CONTRIBUTION_TYPE_RESEARCH_BY`
-- `A32` → `CONTRIBUTION_TYPE_CONTRIBUTIONS_BY`
-- `A34` → `CONTRIBUTION_TYPE_INDEXER`
-
-### Subject Type Codes
-- `04` → `SUBJECT_TYPE_LCC`
-- `10` → `SUBJECT_TYPE_BISAC`
-- `12` → `SUBJECT_TYPE_BIC`
-- `20` → `SUBJECT_TYPE_KEYWORD`
-- `93` → `SUBJECT_TYPE_THEMA`
-- `B2` → `SUBJECT_TYPE_CUSTOM`
-
-### Language Relation Codes
-- `01` → `LANGUAGE_RELATION_ORIGINAL`
-- `02` → `LANGUAGE_RELATION_TRANSLATED_FROM`
-
-### Platform Mappings
-- `Project MUSE` → `LOCATION_PLATFORM_PROJECT_MUSE`
-- `OAPEN` → `LOCATION_PLATFORM_OAPEN`
-- `DOAB` → `LOCATION_PLATFORM_DOAB`
-- `JSTOR` → `LOCATION_PLATFORM_JSTOR`
-- `EBSCO Host` → `LOCATION_PLATFORM_EBSCO_HOST`
-- `OCLC KB` → `LOCATION_PLATFORM_OCLC_KB`
-- `ProQuest KB` → `LOCATION_PLATFORM_PROQUEST_KB`
-- `ProQuest ExLibris` → `LOCATION_PLATFORM_PPROQUEST_EXLIBRIS`
-- `EBSCO KB` → `LOCATION_PLATFORM_EBSCO_KB`
-- `JISC KB` → `LOCATION_PLATFORM_JISC_KB`
-- `Google Books` → `LOCATION_PLATFORM_GOOGLE_BOOKS`
-- `Internet Archive` → `LOCATION_PLATFORM_INTERNET_ARCHIVE`
-- `ScienceOpen` → `LOCATION_PLATFORM_SCIENCE_OPEN`
-- `SciELO Books` → `LOCATION_PLATFORM_SCIELO_BOOKS`
-- `Zenodo` → `LOCATION_PLATFORM_ZENODO`
-
-## Notes
-
-1. **XPath Context**: All XPaths are absolute paths starting from the ONIX root element and leading to the Product element and beyond.
-2. **Namespace**: All ONIX elements use the namespace prefix `onix:` referring to `http://ns.editeur.org/onix/3.0/reference`.
-3. **Root Structure**: The complete ONIX XML structure starts with `/onix:ONIXMessage/onix:Product/` for all product-related data.
-4. **Fallback Logic**: Some mappings include complex fallback logic to handle missing or alternative data sources.
-5. **Validation**: Several fields include validation logic (e.g., URL validation, ISBN validation, file extension checking).
-6. **Transformations**: Many fields include callback functions that transform the raw ONIX values into Thoth-compatible formats.
-7. **Default Values**: Some fields have default values when no data is present in the ONIX file.
-8. **Multiple Elements**: Some elements like Contributors, Languages, Subjects can appear multiple times within a Product.
-
-This mapping is based on the implementation in the mapper classes located in `src/Mapper/Onix30Thoth/` directory.
