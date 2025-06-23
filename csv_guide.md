@@ -10,7 +10,7 @@
 | `edition` | Optional | Edition number of the Work. Use "1" for the initial edition of a Work, even if subsequent editions are not planned. | 1 |
 | `publication_date` | Optional | Date the work was published in the format `yyyy-mm-dd`. | 2024-01-01 |
 | `withdraw_date` | Optional | Date the work was withdrawn from publication in the format `yyyy-mm-dd`. Only applies to out of print and withdrawn works. | 2024-12-01 |
-| `place_of_publication` | Optional | Place of publication of the work | Vancouver,CA |
+| `place_of_publication` | Optional | Place of publication of the work | Vancouver, CA |
 | `cover_url` | Optional | URL of the work's cover image | https://my.publisher.website/book/my-book/cover.jpg |
 | `cover_caption` | Optional | Caption describing the work's cover image | Cover of my book |
 | `doi` | Optional | Digital Object Identifier of the work | 10.11647/obp.0001 |
