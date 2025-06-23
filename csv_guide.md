@@ -39,71 +39,69 @@
 | `contributor_n_biography` | Optional | The biography of the contributor at the time of contribution. Repeatable for each occurrence of contributor (contributor_1_biography, contributor_2_biography, contributor_3_biography, ...) | This is the bibliography of the author of my book. |
 | `contributor_n_orcid` | Optional | ORCID (Open Researcher and Contributor ID) of the contributor. Repeatable for each occurrence of contributor (contributor_1_orcid, contributor_2_orcid, contributor_3_orcid, ...) |  |
 | `contributor_n_website` | Optional | URL of the contributor's website. Repeatable for each occurrence of contributor (contributor_1_website, contributor_2_website, contributor_3_website, ...) | https://www.johndoe.org |
-| `contributor_n_affiliation_n_position` |  |  |  |
-| `contributor_n_affiliation_n_institution_name` |  |  |  |
-| `contributor_n_affiliation_n_institution_ror` |  |  |  |
-| `contributor_n_affiliation_n_position` |  |  |  |
-| `contributor_n_affiliation_n_institution_name` |  |  |  |
-| `contributor_n_affiliation_n_institution_ror` |  |  |  |
-| `original_language` |  |  |  |
-| `translated_from_language` |  |  |  |
-| `translated_into_language` |  |  |  |
-| `thema_subjects` |  |  |  |
-| `bic_subjects` |  |  |  |
-| `bisac_subjects` |  |  |  |
-| `keywords` |  |  |  |
-| `publication_paperback_isbn` |  |  |  |
-| `publication_paperback_width_mm` |  |  |  |
-| `publication_paperback_width_in` |  |  |  |
-| `publication_paperback_height_mm` |  |  |  |
-| `publication_paperback_height_in` |  |  |  |
-| `publication_paperback_depth_mm` |  |  |  |
-| `publication_paperback_depth_in` |  |  |  |
-| `publication_paperback_weight_g` |  |  |  |
-| `publication_paperback_weight_oz` |  |  |  |
-| `publication_paperback_price_1_currency_code` |  |  |  |
-| `publication_paperback_price_1_unit_price` |  |  |  |
-| `publication_paperback_price_2_currency_code` |  |  |  |
-| `publication_paperback_price_2_unit_price` |  |  |  |
-| `publication_hardback_isbn` |  |  |  |
-| `publication_hardback_width_mm` |  |  |  |
-| `publication_hardback_width_in` |  |  |  |
-| `publication_hardback_height_mm` |  |  |  |
-| `publication_hardback_height_in` |  |  |  |
-| `publication_hardback_depth_mm` |  |  |  |
-| `publication_hardback_depth_in` |  |  |  |
-| `publication_hardback_weight_g` |  |  |  |
-| `publication_hardback_weight_oz` |  |  |  |
-| `publication_hardback_price_1_currency_code` |  |  |  |
-| `publication_hardback_price_1_unit_price` |  |  |  |
-| `publication_pdf_isbn` |  |  |  |
-| `publication_pdf_location_1_landing_page` |  |  |  |
-| `publication_pdf_location_1_full_text_url` |  |  |  |
-| `publication_pdf_location_1_platform` |  |  |  |
-| `publication_pdf_location_2_landing_page` |  |  |  |
-| `publication_pdf_location_2_full_text_url` |  |  |  |
-| `publication_pdf_location_2_platform` |  |  |  |
-| `publication_epub_isbn` |  |  |  |
-| `publication_epub_location_1_landing_page` |  |  |  |
-| `publication_epub_location_1_full_text_url` |  |  |  |
-| `publication_epub_location_1_platform` |  |  |  |
-| `publication_epub_price_1_currency_code` |  |  |  |
-| `publication_epub_price_1_unit_price` |  |  |  |
-| `publication_mobi_isbn` |  |  |  |
-| `publication_mobi_location_1_landing_page` |  |  |  |
-| `publication_mobi_location_1_full_text_url` |  |  |  |
-| `publication_mobi_location_1_platform` |  |  |  |
-| `publication_azw3_isbn` |  |  |  |
-| `publication_azw3_location_1_landing_page` |  |  |  |
-| `publication_azw3_location_1_full_text_url` |  |  |  |
-| `publication_azw3_location_1_platform` |  |  |  |
-| `series_name` |  |  |  |
-| `series_issn` |  |  |  |
-| `series_issue_number` |  |  |  |
-| `funding_program` |  |  |  |
-| `funding_project` |  |  |  |
-| `funding_grant_number` |  |  |  |
-| `funding_jurisdiction` |  |  |  |
-| `funding_institution_name` |  |  |  |
-| `funding_institution_ror` |  |  |  |
-| `book_id` |  |  |  |
+| `contributor_n_affiliation_n_position` | Mandatory for each occurrence of contributor affiliation |  |  |
+| `contributor_n_affiliation_n_institution_name` | Mandatory for each occurrence of contributor affiliation |  |  |
+| `contributor_n_affiliation_n_institution_ror` | Optional, but recommended for more precise matching |  |  |
+| `original_language` | Optional |  |  |
+| `translated_from_language` | Optional |  |  |
+| `translated_into_language` | Optional |  |  |
+| `thema_subjects` | Optional |  |  |
+| `bic_subjects` | Optional |  |  |
+| `bisac_subjects` | Optional |  |  |
+| `keywords` | Optional |  |  |
+| `publication_paperback_isbn` | Optional |  |  |
+| `publication_paperback_width_mm` | Optional |  |  |
+| `publication_paperback_width_in` | Optional |  |  |
+| `publication_paperback_height_mm` | Optional |  |  |
+| `publication_paperback_height_in` | Optional |  |  |
+| `publication_paperback_depth_mm` | Optional |  |  |
+| `publication_paperback_depth_in` | Optional |  |  |
+| `publication_paperback_weight_g` | Optional |  |  |
+| `publication_paperback_weight_oz` | Optional |  |  |
+| `publication_paperback_price_n_currency_code` | Mandatory for each occurrence of publication price |  |  |
+| `publication_paperback_price_n_unit_price` | Mandatory for each occurrence of publication price |  |  |
+| `publication_hardback_isbn` | Optional |  |  |
+| `publication_hardback_width_mm` | Optional |  |  |
+| `publication_hardback_width_in` | Optional |  |  |
+| `publication_hardback_height_mm` | Optional |  |  |
+| `publication_hardback_height_in` | Optional |  |  |
+| `publication_hardback_depth_mm` | Optional |  |  |
+| `publication_hardback_depth_in` | Optional |  |  |
+| `publication_hardback_weight_g` | Optional |  |  |
+| `publication_hardback_weight_oz` | Optional |  |  |
+| `publication_hardback_price_n_currency_code` | Mandatory for each occurrence of publication price |  |  |
+| `publication_hardback_price_n_unit_price` | Mandatory for each occurrence of publication price |  |  |
+| `publication_pdf_isbn` | Optional |  |  |
+| `publication_pdf_location_n_landing_page` | Mandatory for each occurrence of digital publication location |  |  |
+| `publication_pdf_location_n_full_text_url` | Mandatory for each occurrence of digital publication location |  |  |
+| `publication_pdf_location_n_platform` | Mandatory for each occurrence of digital publication location |  |  |
+| `publication_pdf_price_n_currency_code` | Mandatory for each occurrence of publication price |  |  |
+| `publication_pdf_price_n_unit_price` | Mandatory for each occurrence of publication price |  |  |
+| `publication_epub_isbn` | Optional |  |  |
+| `publication_epub_location_n_landing_page` | Mandatory for each occurrence of digital publication location |  |  |
+| `publication_epub_location_n_full_text_url` | Mandatory for each occurrence of digital publication location |  |  |
+| `publication_epub_location_n_platform` | Mandatory for each occurrence of digital publication location |  |  |
+| `publication_epub_price_n_currency_code` | Mandatory for each occurrence of publication price |  |  |
+| `publication_epub_price_n_unit_price` | Mandatory for each occurrence of publication price |  |  |
+| `publication_mobi_isbn` | Optional |  |  |
+| `publication_mobi_location_n_landing_page` | Mandatory for each occurrence of digital publication location |  |  |
+| `publication_mobi_location_n_full_text_url` | Mandatory for each occurrence of digital publication location |  |  |
+| `publication_mobi_location_n_platform` | Mandatory for each occurrence of digital publication location |  |  |
+| `publication_mobi_price_n_currency_code` | Mandatory for each occurrence of publication price |  |  |
+| `publication_mobi_price_n_unit_price` | Mandatory for each occurrence of publication price |  |  |
+| `publication_azw3_isbn` | Optional |  |  |
+| `publication_azw3_location_n_landing_page` | Mandatory for each occurrence of digital publication location |  |  |
+| `publication_azw3_location_n_full_text_url` | Mandatory for each occurrence of digital publication location |  |  |
+| `publication_azw3_location_n_platform` | Mandatory for each occurrence of digital publication location |  |  |
+| `publication_azw3_price_n_currency_code` | Mandatory for each occurrence of publication price |  |  |
+| `publication_azw3_price_n_unit_price` | Mandatory for each occurrence of publication price filled in |  |  |
+| `series_name` | Optional |  |  |
+| `series_issn` | Optional |  |  |
+| `series_issue_number` | Mandatory if `series_name` or `series_issn` is filled in |  |  |
+| `funding_program` | Optional |  |  |
+| `funding_project` | Optional |  |  |
+| `funding_grant_number` | Optional |  |  |
+| `funding_jurisdiction` | Optional |  |  |
+| `funding_institution_name` | Mandatory for funding |  |  |
+| `funding_institution_ror` | Optional, but recommended for more precise matching |  |  |
+| `book_id` | Optional |  |  |
