@@ -36,28 +36,28 @@
 | `contributor_n_name` | Mandatory for each occurrence of contributor | Full name of contributor. Repeatable for each occurrence of contributor (contributor_1_name, contributor_2_name, contributor_3_name, ...) | John Doe |
 | `contributor_n_type` | Mandatory for each occurrence of contributor | Role describing the type of contribution to the work. Accepted values: `AUTHOR`; `EDITOR`; `TRANSLATOR`; `PHOTOGRAPHER`; `ILLUSTRATOR`; `MUSIC_EDITOR`; `FOREWORD_BY`; `INTRODUCTION_BY`; `AFTERWORD_BY`; `PREFACE_BY`; `SOFTWARE_BY`; `RESEARCH_BY`; `CONTRIBUTIONS_BY`; `INDEXER`. Repeatable for each occurrence of contributor (contributor_1_type, contributor_2_type, contributor_3_type, ...) | AUTHOR |
 | `contributor_n_main_contribution` | Mandatory for each occurrence of contributor | Use `true` or `false` to indicate whether the contribution is a main contribution to the work. Repeatable for each occurrence of contributor (contributor_1_main_contribution, contributor_2_main_contribution, contributor_3_main_contribution, ...) | true |
-| `contributor_n_biography` | Optional | The biography of the contributor at the time of contribution. Repeatable for each occurrence of contributor (contributor_1_biography, contributor_2_biography, contributor_3_biography, ...) | This is the bibliography of the author of my book. |
-| `contributor_n_orcid` | Optional | ORCID (Open Researcher and Contributor ID) of the contributor. Repeatable for each occurrence of contributor (contributor_1_orcid, contributor_2_orcid, contributor_3_orcid, ...) |  |
+| `contributor_n_biography` | Optional | The biography of the contributor at the time of contribution. Repeatable for each occurrence of contributor (contributor_1_biography, contributor_2_biography, contributor_3_biography, ...) | John Doe is a distinguished professor at Harvard University, where he has been a pivotal figure in the academic community for over two decades. |
+| `contributor_n_orcid` | Optional | ORCID (Open Researcher and Contributor ID) of the contributor. Repeatable for each occurrence of contributor (contributor_1_orcid, contributor_2_orcid, contributor_3_orcid, ...) | 0000-0001-2345-678X |
 | `contributor_n_website` | Optional | URL of the contributor's website. Repeatable for each occurrence of contributor (contributor_1_website, contributor_2_website, contributor_3_website, ...) | https://www.johndoe.org |
-| `contributor_n_affiliation_n_position` | Mandatory for each occurrence of contributor affiliation |  |  |
-| `contributor_n_affiliation_n_institution_name` | Mandatory for each occurrence of contributor affiliation |  |  |
-| `contributor_n_affiliation_n_institution_ror` | Optional, but recommended for more precise matching |  |  |
-| `original_language` | Optional |  |  |
-| `translated_from_language` | Optional |  |  |
-| `translated_into_language` | Optional |  |  |
-| `thema_subjects` | Optional |  |  |
-| `bic_subjects` | Optional |  |  |
-| `bisac_subjects` | Optional |  |  |
-| `keywords` | Optional |  |  |
-| `publication_paperback_isbn` | Optional |  |  |
-| `publication_paperback_width_mm` | Optional |  |  |
-| `publication_paperback_width_in` | Optional |  |  |
-| `publication_paperback_height_mm` | Optional |  |  |
-| `publication_paperback_height_in` | Optional |  |  |
-| `publication_paperback_depth_mm` | Optional |  |  |
-| `publication_paperback_depth_in` | Optional |  |  |
-| `publication_paperback_weight_g` | Optional |  |  |
-| `publication_paperback_weight_oz` | Optional |  |  |
+| `contributor_n_affiliation_n_position` | Mandatory for each occurrence of contributor affiliation | Position of the contributor at the institution at the time of contribution. Repeatable for each occurrence of contributor affiliation (contributor_1_affiliation_1_position, contributor_1_affiliation_2_position, ...) | Associate Professor |
+| `contributor_n_affiliation_n_institution_name` | Mandatory for each occurrence of contributor affiliation | The institution name affiliated with the contributor at the moment of contribution. Repeatable for each occurrence of contributor affiliation (contributor_1_affiliation_1_institution_name, contributor_1_affiliation_2_institution_name, ...) | Harvard University |
+| `contributor_n_affiliation_n_institution_ror` | Optional, but recommended for more precise matching | The institution ROR (Research Organisation Registry) affiliated with the contributor at the moment of contribution. Repeatable for each occurrence of contributor affiliation (contributor_1_affiliation_1_institution_ror, contributor_1_affiliation_2_institution_ror, ...) | 03vek6s52 |
+| `original_language` | Optional | Original language of the text. ISO 639-3 code. See [ISO 639-3](https://iso639-3.sil.org/code_tables/639/data) for full list of language codes. Multiple (separated by semicolon) | ENG;FRE |
+| `translated_from_language` | Optional | Language from which the text was translated. ISO 639-3 code. See [ISO 639-3](https://iso639-3.sil.org/code_tables/639/data) for full list of language codes. Multiple (separated by semicolon) | ITA;SPA |
+| `translated_into_language` | Optional | Language into which the text has been translated. ISO 639-3 code. See [ISO 639-3](https://iso639-3.sil.org/code_tables/639/data) for full list of language codes. Multiple (separated by semicolon) | POR;AFR |
+| `thema_subjects` | Optional | Subjects in [Thema](https://ns.editeur.org/thema/en) code. Multiple (separated by semicolon) | FYM;QDTK;QDHR5 |
+| `bic_subjects` | Optional | Subjects in BIC code. Multiple (separated by semicolon) | FIC057000;PHI014000 |
+| `bisac_subjects` | Optional | Subjects in [BISAC]([https://ns.editeur.org/thema/en](https://www.bisg.org/complete-bisac-subject-headings-list)) code. Multiple (separated by semicolon) |  |
+| `keywords` | Optional | Words or phrases that describe content. Multiple (separated by semicolon) | embodiment;philosophy;media theory |
+| `publication_paperback_isbn` | Optional | International Standard Book Number of the paperback Publication, in ISBN-13 format. | 9789800000001 |
+| `publication_paperback_width_mm` | Optional | Width of the paperback Publication in millimetres (only applicable to non-Chapter). Automatically converted if value in inches is filled in | 156 |
+| `publication_paperback_width_in` | Optional | Width of the paperback Publication in inches (only applicable to non-Chapter). Automatically converted if value in millimetres is filled in | 6.14 |
+| `publication_paperback_height_mm` | Optional | Height of the paperback Publication in millimetres (only applicable to non-Chapter). Automatically converted if value in inches is filled in | 234 |
+| `publication_paperback_height_in` | Optional | Height of the paperback Publication in inches (only applicable to non-Chapter). Automatically converted if value in millimetres is filled in | 9.21 |
+| `publication_paperback_depth_mm` | Optional | Depth of the paperback Publication in millimetres (only applicable to non-Chapter). Automatically converted if value in inches is filled in | 27 |
+| `publication_paperback_depth_in` | Optional | Depth of the paperback Publication in inches (only applicable to non-Chapter). Automatically converted if value in millimetres is filled in | 1.06 |
+| `publication_paperback_weight_g` | Optional | Weight of the paperback Publication in grams (only applicable to non-Chapter). Automatically converted if value in ounces is filled in | 742 |
+| `publication_paperback_weight_oz` | Optional | Weight of the paperback Publication in ounces (only applicable to non-Chapter). Automatically converted if value in grams is filled in | 26.1733 |
 | `publication_paperback_price_n_currency_code` | Mandatory for each occurrence of publication price |  |  |
 | `publication_paperback_price_n_unit_price` | Mandatory for each occurrence of publication price |  |  |
 | `publication_hardback_isbn` | Optional |  |  |
