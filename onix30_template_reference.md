@@ -102,199 +102,99 @@
           - [CurrencyCode](#currencycode)
           - [Territory](#territory)
 
-<details>
-<summary><h2>ONIXMessage</h2></summary>
+## ONIXMessage
 
-<details>
-<summary><h3>Header</h3></summary>
+## Header
 
-<details>
-<summary><h4>Sender</h4></summary>
-</details>
+### Sender
 
-<details>
-<summary><h4>SentDateTime</h4></summary>
-</details>
+### SentDateTime
 
-</details>
+## Product
 
-<details>
-<summary><h3>Product</h3></summary>
+### RecordReference
 
-<details>
-<summary><h4>RecordReference</h4></summary>
-</details>
+### NotificationType
 
-<details>
-<summary><h4>NotificationType</h4></summary>
-</details>
+### RecordSourceType
 
-<details>
-<summary><h4>RecordSourceType</h4></summary>
-</details>
+### ProductIdentifier
 
-<details>
-<summary><h4>ProductIdentifier</h4></summary>
-</details>
+### DescriptiveDetail
 
-<details>
-<summary><h4>DescriptiveDetail</h4></summary>
+#### ProductComposition
 
-<details>
-<summary><h5>ProductComposition</h5></summary>
-</details>
+#### ProductForm
 
-<details>
-<summary><h5>ProductForm</h5></summary>
-</details>
+#### ProductFormDetail
 
-<details>
-<summary><h5>ProductFormDetail</h5></summary>
-</details>
+#### PrimaryContentType
 
-<details>
-<summary><h5>PrimaryContentType</h5></summary>
-</details>
+#### Collection
 
-<details>
-<summary><h5>Collection</h5></summary>
+##### CollectionType
 
-<details>
-<summary><h6>CollectionType</h6></summary>
-</details>
+##### CollectionIdentifier
 
-<details>
-<summary><h6>CollectionIdentifier</h6></summary>
-</details>
+##### CollectionSequence
 
-<details>
-<summary><h6>CollectionSequence</h6></summary>
-</details>
+##### TitleDetail
 
-<details>
-<summary><h6>TitleDetail</h6></summary>
+###### TitleType
 
-<details>
-<summary><h7>TitleType</h7></summary>
-</details>
+###### TitleElement
 
-<details>
-<summary><h7>TitleElement</h7></summary>
-</details>
+#### Measure
 
-</details>
+#### EpubLicense
 
-</details>
+##### EpubLicenseName
 
-<details>
-<summary><h5>Measure</h5></summary>
-</details>
+##### EpubLicenseExpression
 
-<details>
-<summary><h5>EpubLicense</h5></summary>
+#### TitleDetail
 
-<details>
-<summary><h6>EpubLicenseName</h6></summary>
-</details>
+##### TitleType
 
-<details>
-<summary><h6>EpubLicenseExpression</h6></summary>
-</details>
+##### TitleElement
 
-</details>
+#### Contributor
 
-<details>
-<summary><h5>TitleDetail</h5></summary>
+##### SequenceNumber
 
-<details>
-<summary><h6>TitleType</h6></summary>
-</details>
+##### ContributorRole
 
-<details>
-<summary><h6>TitleElement</h6></summary>
-</details>
+##### NameIdentifier
 
-</details>
+##### PersonName
 
-<details>
-<summary><h5>Contributor</h5></summary>
+##### NamesBeforeKey
 
-<details>
-<summary><h6>SequenceNumber</h6></summary>
-</details>
+##### KeyNames
 
-<details>
-<summary><h6>ContributorRole</h6></summary>
-</details>
+##### ProfessionalAffiliation
 
-<details>
-<summary><h6>NameIdentifier</h6></summary>
-</details>
+###### ProfessionalPosition
 
-<details>
-<summary><h6>PersonName</h6></summary>
-</details>
+###### Affiliation
 
-<details>
-<summary><h6>NamesBeforeKey</h6></summary>
-</details>
+##### BiographicalNote
 
-<details>
-<summary><h6>KeyNames</h6></summary>
-</details>
+##### Website
 
-<details>
-<summary><h6>ProfessionalAffiliation</h6></summary>
+#### EditionNumber
 
-<details>
-<summary><h7>ProfessionalPosition</h7></summary>
-</details>
+#### Language
 
-<details>
-<summary><h7>Affiliation</h7></summary>
-</details>
+#### Extent
 
-</details>
+#### IllustrationsNote
 
-<details>
-<summary><h6>BiographicalNote</h6></summary>
-</details>
+#### AncillaryContent
 
-<details>
-<summary><h6>Website</h6></summary>
-</details>
+#### Subject
 
-</details>
-
-<details>
-<summary><h5>EditionNumber</h5></summary>
-</details>
-
-<details>
-<summary><h5>Language</h5></summary>
-</details>
-
-<details>
-<summary><h5>Extent</h5></summary>
-</details>
-
-<details>
-<summary><h5>IllustrationsNote</h5></summary>
-</details>
-
-<details>
-<summary><h5>AncillaryContent</h5></summary>
-</details>
-
-<details>
-<summary><h5>Subject</h5></summary>
-</details>
-
-<details>
-<summary><h5>Audience</h5></summary>
-</details>
-
-</details>
+#### Audience
 
 ### CollateralDetail
 
