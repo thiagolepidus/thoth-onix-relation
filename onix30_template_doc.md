@@ -22,6 +22,7 @@ This document provides a comprehensive guide for creating ONIX 3.0 XML files com
 16. [Publishing Detail](#publishing-detail)
 17. [Product Supply](#product-supply)
 18. [Code Reference Tables](#code-reference-tables)
+19. [Header](#header)
 
 ## XML Structure Overview
 
