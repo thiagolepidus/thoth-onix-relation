@@ -40,9 +40,7 @@ The ONIX 3.0 XML file follows a specific structure that maps to the Thoth data m
 </ONIXMessage>
 ```
 
-## Root Elements
-
-### ONIXMessage
+## ONIXMessage
 The root element that contains all ONIX data.
 
 **Attributes:**
