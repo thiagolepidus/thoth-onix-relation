@@ -296,238 +296,110 @@
 
 </details>
 
-<details>
-<summary><h4>CollateralDetail</h4></summary>
+### CollateralDetail
 
-<details>
-<summary><h5>TextContent</h5></summary>
-</details>
+#### TextContent
 
-<details>
-<summary><h5>SupportingResource</h5></summary>
+#### SupportingResource
 
-<details>
-<summary><h6>ResourceContentType</h6></summary>
-</details>
+##### ResourceContentType
 
-<details>
-<summary><h6>ContentAudience</h6></summary>
-</details>
+##### ContentAudience
 
-<details>
-<summary><h6>ResourceMode</h6></summary>
-</details>
+##### ResourceMode
 
-<details>
-<summary><h6>ResourceFeature</h6></summary>
-</details>
+##### ResourceFeature
 
-<details>
-<summary><h6>ResourceVersion</h6></summary>
-</details>
+##### ResourceVersion
 
-</details>
+### ContentDetail
 
-</details>
+#### ContentItem
 
-<details>
-<summary><h4>ContentDetail</h4></summary>
+##### LevelSequenceNumber
 
-<details>
-<summary><h5>ContentItem</h5></summary>
+##### TextItem
 
-<details>
-<summary><h6>LevelSequenceNumber</h6></summary>
-</details>
+###### TextItemType
 
-<details>
-<summary><h6>TextItem</h6></summary>
+###### TextItemIdentifier
 
-<details>
-<summary><h7>TextItemType</h7></summary>
-</details>
+###### PageRun
 
-<details>
-<summary><h7>TextItemIdentifier</h7></summary>
-</details>
+###### NumberOfPages
 
-<details>
-<summary><h7>PageRun</h7></summary>
-</details>
+##### ComponentTypeName
 
-<details>
-<summary><h7>NumberOfPages</h7></summary>
-</details>
+### PublishingDetail
 
-</details>
+#### Imprint
 
-<details>
-<summary><h6>ComponentTypeName</h6></summary>
-</details>
+##### ImprintIdentifier
 
-</details>
+##### ImprintName
 
-</details>
+#### Publisher
 
-<details>
-<summary><h4>PublishingDetail</h4></summary>
+##### PublishingRole
 
-<details>
-<summary><h5>Imprint</h5></summary>
+##### PublisherIdentifier
 
-<details>
-<summary><h6>ImprintIdentifier</h6></summary>
-</details>
+##### PublisherName
 
-<details>
-<summary><h6>ImprintName</h6></summary>
-</details>
+##### Funding
 
-</details>
+###### FundingIdentifier
 
-<details>
-<summary><h5>Publisher</h5></summary>
+##### Website
 
-<details>
-<summary><h6>PublishingRole</h6></summary>
-</details>
+#### CityOfPublication
 
-<details>
-<summary><h6>PublisherIdentifier</h6></summary>
-</details>
+#### PublishingStatus
 
-<details>
-<summary><h6>PublisherName</h6></summary>
-</details>
+#### PublishingDate
 
-<details>
-<summary><h6>Funding</h6></summary>
+#### CopyrightStatement
 
-<details>
-<summary><h7>FundingIdentifier</h7></summary>
-</details>
+#### SalesRights
 
-</details>
+### RelatedMaterial
 
-<details>
-<summary><h6>Website</h6></summary>
-</details>
+#### RelatedWork
 
-</details>
+##### ProductRelationCode
 
-<details>
-<summary><h5>CityOfPublication</h5></summary>
-</details>
+##### ProductIdentifier
 
-<details>
-<summary><h5>PublishingStatus</h5></summary>
-</details>
+#### RelatedProduct
 
-<details>
-<summary><h5>PublishingDate</h5></summary>
-</details>
+##### ProductRelationCode
 
-<details>
-<summary><h5>CopyrightStatement</h5></summary>
-</details>
+##### ProductIdentifier
 
-<details>
-<summary><h5>SalesRights</h5></summary>
-</details>
+### ProductSupply
 
-</details>
+#### Market
 
-<details>
-<summary><h4>RelatedMaterial</h4></summary>
+#### SupplyDetail
 
-<details>
-<summary><h5>RelatedWork</h5></summary>
+##### Supplier
 
-<details>
-<summary><h6>ProductRelationCode</h6></summary>
-</details>
+###### SupplierRole
 
-<details>
-<summary><h6>ProductIdentifier</h6></summary>
-</details>
+###### SupplierName
 
-</details>
+###### Website
 
-<details>
-<summary><h5>RelatedProduct</h5></summary>
+##### ProductAvailability
 
-<details>
-<summary><h6>ProductRelationCode</h6></summary>
-</details>
+##### SupplyDate
 
-<details>
-<summary><h6>ProductIdentifier</h6></summary>
-</details>
+##### Price
 
-</details>
+###### PriceType
 
-</details>
+###### PriceAmount
 
-<details>
-<summary><h4>ProductSupply</h4></summary>
+###### CurrencyCode
 
-<details>
-<summary><h5>Market</h5></summary>
-</details>
-
-<details>
-<summary><h5>SupplyDetail</h5></summary>
-
-<details>
-<summary><h6>Supplier</h6></summary>
-
-<details>
-<summary><h7>SupplierRole</h7></summary>
-</details>
-
-<details>
-<summary><h7>SupplierName</h7></summary>
-</details>
-
-<details>
-<summary><h7>Website</h7></summary>
-</details>
-
-</details>
-
-<details>
-<summary><h6>ProductAvailability</h6></summary>
-</details>
-
-<details>
-<summary><h6>SupplyDate</h6></summary>
-</details>
-
-<details>
-<summary><h6>Price</h6></summary>
-
-<details>
-<summary><h7>PriceType</h7></summary>
-</details>
-
-<details>
-<summary><h7>PriceAmount</h7></summary>
-</details>
-
-<details>
-<summary><h7>CurrencyCode</h7></summary>
-</details>
-
-<details>
-<summary><h7>Territory</h7></summary>
-</details>
-
-</details>
-
-</details>
-
-</details>
-
-</details>
-
-</details>
+###### Territory
