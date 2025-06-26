@@ -103,6 +103,8 @@
           - [Territory](#territory)
 
 ## ONIXMessage
+`Mandatory`
+
 The root element that contains all ONIX data.
 
 The ONIX 3.0 XML file follows a specific structure:
@@ -110,12 +112,12 @@ The ONIX 3.0 XML file follows a specific structure:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <ONIXMessage release="3.0" xmlns="http://ns.editeur.org/onix/3.0/reference">
-    <Header>
-        <!-- Header information -->
-    </Header>
-    <Product>
-        <!-- Product information -->
-    </Product>
+  <Header>
+    <!-- Header information -->
+  </Header>
+  <Product>
+    <!-- Product information -->
+  </Product>
 </ONIXMessage>
 ```
 
@@ -124,10 +126,42 @@ The ONIX 3.0 XML file follows a specific structure:
 - `xmlns="http://ns.editeur.org/onix/3.0/reference"` - XML namespace
 
 ## Header
+`Mandatory`
+
+Contains information about the file
+
+```xml
+<Header>
+  <Sender>
+    <!-- Sender information -->
+  </Sender>
+  <SentDateTime>20240101T120000</SentDateTime>
+</Header>
+```
 
 ### Sender
+`Mandatory`
+
+Information about the entity sending the file.
+
+```xml
+<Sender>
+  <SenderName>My Publisher</SenderName>
+  <EmailAddress>contact@publisher.com</EmailAddress>
+</Sender>
+```
+
+**Sub-elements:**
+- `SenderName` - Sender entity name
+- `EmailAddress` - Sender entity contact e-mail
 
 ### SentDateTime
+
+Specifies the date and time when the file is being sent.
+
+```xml
+<SentDateTime>20240101T120000</SentDateTime>
+```
 
 ## Product
 
