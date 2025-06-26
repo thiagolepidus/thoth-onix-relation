@@ -102,204 +102,432 @@
           - [CurrencyCode](#currencycode)
           - [Territory](#territory)
 
-## ONIXMessage
+<details>
+<summary><h2>ONIXMessage</h2></summary>
 
-## Header
+<details>
+<summary><h3>Header</h3></summary>
 
-### Sender
+<details>
+<summary><h4>Sender</h4></summary>
+</details>
 
-### SentDateTime
+<details>
+<summary><h4>SentDateTime</h4></summary>
+</details>
 
-## Product
+</details>
 
-### RecordReference
+<details>
+<summary><h3>Product</h3></summary>
 
-### NotificationType
+<details>
+<summary><h4>RecordReference</h4></summary>
+</details>
 
-### RecordSourceType
+<details>
+<summary><h4>NotificationType</h4></summary>
+</details>
 
-### ProductIdentifier
+<details>
+<summary><h4>RecordSourceType</h4></summary>
+</details>
 
-### DescriptiveDetail
+<details>
+<summary><h4>ProductIdentifier</h4></summary>
+</details>
 
-#### ProductComposition
+<details>
+<summary><h4>DescriptiveDetail</h4></summary>
 
-#### ProductForm
+<details>
+<summary><h5>ProductComposition</h5></summary>
+</details>
 
-#### ProductFormDetail
+<details>
+<summary><h5>ProductForm</h5></summary>
+</details>
 
-#### PrimaryContentType
+<details>
+<summary><h5>ProductFormDetail</h5></summary>
+</details>
 
-#### Collection
+<details>
+<summary><h5>PrimaryContentType</h5></summary>
+</details>
 
-##### CollectionType
+<details>
+<summary><h5>Collection</h5></summary>
 
-##### CollectionIdentifier
+<details>
+<summary><h6>CollectionType</h6></summary>
+</details>
 
-##### CollectionSequence
+<details>
+<summary><h6>CollectionIdentifier</h6></summary>
+</details>
 
-##### TitleDetail
+<details>
+<summary><h6>CollectionSequence</h6></summary>
+</details>
 
-###### TitleType
+<details>
+<summary><h6>TitleDetail</h6></summary>
 
-###### TitleElement
+<details>
+<summary><h7>TitleType</h7></summary>
+</details>
 
-#### Measure
+<details>
+<summary><h7>TitleElement</h7></summary>
+</details>
 
-#### EpubLicense
+</details>
 
-##### EpubLicenseName
+</details>
 
-##### EpubLicenseExpression
+<details>
+<summary><h5>Measure</h5></summary>
+</details>
 
-#### TitleDetail
+<details>
+<summary><h5>EpubLicense</h5></summary>
 
-##### TitleType
+<details>
+<summary><h6>EpubLicenseName</h6></summary>
+</details>
 
-##### TitleElement
+<details>
+<summary><h6>EpubLicenseExpression</h6></summary>
+</details>
 
-#### Contributor
+</details>
 
-##### SequenceNumber
+<details>
+<summary><h5>TitleDetail</h5></summary>
 
-##### ContributorRole
+<details>
+<summary><h6>TitleType</h6></summary>
+</details>
 
-##### NameIdentifier
+<details>
+<summary><h6>TitleElement</h6></summary>
+</details>
 
-##### PersonName
+</details>
 
-##### NamesBeforeKey
+<details>
+<summary><h5>Contributor</h5></summary>
 
-##### KeyNames
+<details>
+<summary><h6>SequenceNumber</h6></summary>
+</details>
 
-##### ProfessionalAffiliation
+<details>
+<summary><h6>ContributorRole</h6></summary>
+</details>
 
-###### ProfessionalPosition
+<details>
+<summary><h6>NameIdentifier</h6></summary>
+</details>
 
-###### Affiliation
+<details>
+<summary><h6>PersonName</h6></summary>
+</details>
 
-##### BiographicalNote
+<details>
+<summary><h6>NamesBeforeKey</h6></summary>
+</details>
 
-##### Website
+<details>
+<summary><h6>KeyNames</h6></summary>
+</details>
 
-#### EditionNumber
+<details>
+<summary><h6>ProfessionalAffiliation</h6></summary>
 
-#### Language
+<details>
+<summary><h7>ProfessionalPosition</h7></summary>
+</details>
 
-#### Extent
+<details>
+<summary><h7>Affiliation</h7></summary>
+</details>
 
-#### IllustrationsNote
+</details>
 
-#### AncillaryContent
+<details>
+<summary><h6>BiographicalNote</h6></summary>
+</details>
 
-#### Subject
+<details>
+<summary><h6>Website</h6></summary>
+</details>
 
-#### Audience
+</details>
 
-### CollateralDetail
+<details>
+<summary><h5>EditionNumber</h5></summary>
+</details>
 
-#### TextContent
+<details>
+<summary><h5>Language</h5></summary>
+</details>
 
-#### SupportingResource
+<details>
+<summary><h5>Extent</h5></summary>
+</details>
 
-##### ResourceContentType
+<details>
+<summary><h5>IllustrationsNote</h5></summary>
+</details>
 
-##### ContentAudience
+<details>
+<summary><h5>AncillaryContent</h5></summary>
+</details>
 
-##### ResourceMode
+<details>
+<summary><h5>Subject</h5></summary>
+</details>
 
-##### ResourceFeature
+<details>
+<summary><h5>Audience</h5></summary>
+</details>
 
-##### ResourceVersion
+</details>
 
-### ContentDetail
+<details>
+<summary><h4>CollateralDetail</h4></summary>
 
-#### ContentItem
+<details>
+<summary><h5>TextContent</h5></summary>
+</details>
 
-##### LevelSequenceNumber
+<details>
+<summary><h5>SupportingResource</h5></summary>
 
-##### TextItem
+<details>
+<summary><h6>ResourceContentType</h6></summary>
+</details>
 
-###### TextItemType
+<details>
+<summary><h6>ContentAudience</h6></summary>
+</details>
 
-###### TextItemIdentifier
+<details>
+<summary><h6>ResourceMode</h6></summary>
+</details>
 
-###### PageRun
+<details>
+<summary><h6>ResourceFeature</h6></summary>
+</details>
 
-###### NumberOfPages
+<details>
+<summary><h6>ResourceVersion</h6></summary>
+</details>
 
-##### ComponentTypeName
+</details>
 
-### PublishingDetail
+</details>
 
-#### Imprint
+<details>
+<summary><h4>ContentDetail</h4></summary>
 
-##### ImprintIdentifier
+<details>
+<summary><h5>ContentItem</h5></summary>
 
-##### ImprintName
+<details>
+<summary><h6>LevelSequenceNumber</h6></summary>
+</details>
 
-#### Publisher
+<details>
+<summary><h6>TextItem</h6></summary>
 
-##### PublishingRole
+<details>
+<summary><h7>TextItemType</h7></summary>
+</details>
 
-##### PublisherIdentifier
+<details>
+<summary><h7>TextItemIdentifier</h7></summary>
+</details>
 
-##### PublisherName
+<details>
+<summary><h7>PageRun</h7></summary>
+</details>
 
-##### Funding
+<details>
+<summary><h7>NumberOfPages</h7></summary>
+</details>
 
-###### FundingIdentifier
+</details>
 
-##### Website
+<details>
+<summary><h6>ComponentTypeName</h6></summary>
+</details>
 
-#### CityOfPublication
+</details>
 
-#### PublishingStatus
+</details>
 
-#### PublishingDate
+<details>
+<summary><h4>PublishingDetail</h4></summary>
 
-#### CopyrightStatement
+<details>
+<summary><h5>Imprint</h5></summary>
 
-#### SalesRights
+<details>
+<summary><h6>ImprintIdentifier</h6></summary>
+</details>
 
-### RelatedMaterial
+<details>
+<summary><h6>ImprintName</h6></summary>
+</details>
 
-#### RelatedWork
+</details>
 
-##### ProductRelationCode
+<details>
+<summary><h5>Publisher</h5></summary>
 
-##### ProductIdentifier
+<details>
+<summary><h6>PublishingRole</h6></summary>
+</details>
 
-#### RelatedProduct
+<details>
+<summary><h6>PublisherIdentifier</h6></summary>
+</details>
 
-##### ProductRelationCode
+<details>
+<summary><h6>PublisherName</h6></summary>
+</details>
 
-##### ProductIdentifier
+<details>
+<summary><h6>Funding</h6></summary>
 
-### ProductSupply
+<details>
+<summary><h7>FundingIdentifier</h7></summary>
+</details>
 
-#### Market
+</details>
 
-#### SupplyDetail
+<details>
+<summary><h6>Website</h6></summary>
+</details>
 
-##### Supplier
+</details>
 
-###### SupplierRole
+<details>
+<summary><h5>CityOfPublication</h5></summary>
+</details>
 
-###### SupplierName
+<details>
+<summary><h5>PublishingStatus</h5></summary>
+</details>
 
-###### Website
+<details>
+<summary><h5>PublishingDate</h5></summary>
+</details>
 
-##### ProductAvailability
+<details>
+<summary><h5>CopyrightStatement</h5></summary>
+</details>
 
-##### SupplyDate
+<details>
+<summary><h5>SalesRights</h5></summary>
+</details>
 
-##### Price
+</details>
 
-###### PriceType
+<details>
+<summary><h4>RelatedMaterial</h4></summary>
 
-###### PriceAmount
+<details>
+<summary><h5>RelatedWork</h5></summary>
 
-###### CurrencyCode
+<details>
+<summary><h6>ProductRelationCode</h6></summary>
+</details>
 
-###### Territory
+<details>
+<summary><h6>ProductIdentifier</h6></summary>
+</details>
+
+</details>
+
+<details>
+<summary><h5>RelatedProduct</h5></summary>
+
+<details>
+<summary><h6>ProductRelationCode</h6></summary>
+</details>
+
+<details>
+<summary><h6>ProductIdentifier</h6></summary>
+</details>
+
+</details>
+
+</details>
+
+<details>
+<summary><h4>ProductSupply</h4></summary>
+
+<details>
+<summary><h5>Market</h5></summary>
+</details>
+
+<details>
+<summary><h5>SupplyDetail</h5></summary>
+
+<details>
+<summary><h6>Supplier</h6></summary>
+
+<details>
+<summary><h7>SupplierRole</h7></summary>
+</details>
+
+<details>
+<summary><h7>SupplierName</h7></summary>
+</details>
+
+<details>
+<summary><h7>Website</h7></summary>
+</details>
+
+</details>
+
+<details>
+<summary><h6>ProductAvailability</h6></summary>
+</details>
+
+<details>
+<summary><h6>SupplyDate</h6></summary>
+</details>
+
+<details>
+<summary><h6>Price</h6></summary>
+
+<details>
+<summary><h7>PriceType</h7></summary>
+</details>
+
+<details>
+<summary><h7>PriceAmount</h7></summary>
+</details>
+
+<details>
+<summary><h7>CurrencyCode</h7></summary>
+</details>
+
+<details>
+<summary><h7>Territory</h7></summary>
+</details>
+
+</details>
+
+</details>
+
+</details>
+
+</details>
+
+</details>
