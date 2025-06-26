@@ -103,6 +103,25 @@
           - [Territory](#territory)
 
 ## ONIXMessage
+The root element that contains all ONIX data.
+
+The ONIX 3.0 XML file follows a specific structure:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<ONIXMessage release="3.0" xmlns="http://ns.editeur.org/onix/3.0/reference">
+    <Header>
+        <!-- Header information -->
+    </Header>
+    <Product>
+        <!-- Product information -->
+    </Product>
+</ONIXMessage>
+```
+
+**Attributes:**
+- `release="3.0"` - ONIX version
+- `xmlns="http://ns.editeur.org/onix/3.0/reference"` - XML namespace
 
 ## Header
 
