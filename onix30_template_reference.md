@@ -128,14 +128,14 @@ The ONIX 3.0 XML file follows a specific structure:
 ## Header
 `Mandatory`
 
-Contains information about the file
+Contains information about the file.
 
 ```xml
 <Header>
   <Sender>
     <!-- Sender information -->
   </Sender>
-  <SentDateTime>20240101T120000</SentDateTime>
+  <SentDateTime>...</SentDateTime>
 </Header>
 ```
 
@@ -164,16 +164,86 @@ Specifies the date and time when the file is being sent.
 ```
 
 ## Product
+`Mandatory, Repeatable`
+
+Information about each publication.
 
 ### RecordReference
+`Mandatory`
+
+Unique identifier for the record. ISBN recommended.
+
+```xml
+<RecordReference>9789800000001</RecordReference>
+```
 
 ### NotificationType
+`Mandatory`
+
+Indicates the type of notification or update which you are sending. Default 03 (Notification confirmed on publication).
+
+```xml
+<NotificationType>03</NotificationType>
+```
 
 ### RecordSourceType
+`Mandatory`
+
+Indicates the type of source which has issued the record. Default 01 (Publisher).
+
+```xml
+<RecordSourceType>01</RecordSourceType>
+```
 
 ### ProductIdentifier
+`Optional, Repeatable`
+
+Define an identifier of the organization which is the source of the record.
+
+**ISBN-13**
+```xml
+<ProductIdentifier>
+    <ProductIDType>15</ProductIDType>
+    <IDValue>9781800649866</IDValue>
+</ProductIdentifier>
+```
+
+**DOI**
+```xml
+<ProductIdentifier>
+    <ProductIDType>06</ProductIDType>
+    <IDValue>10.12345/12345678</IDValue>
+</ProductIdentifier>
+```
+
+**LCCN (Library of Congress Control Number)**
+```xml
+<ProductIdentifier>
+    <ProductIDType>13</ProductIDType>
+    <IDValue>2017123456</IDValue>
+</ProductIdentifier>
+```
+
+**OCLC Number**
+```xml
+<ProductIdentifier>
+    <ProductIDType>23</ProductIDType>
+    <IDValue>1086123456</IDValue>
+</ProductIdentifier>
+```
+
+**Sub-elements**:
+- `ProductIDType` - ONIX code specifying the Product Identifier type provided.
+  - `05`: DOI
+  - `13`: LCCN
+  - `15`: ISBN-13
+  - `23`: OCLC
+- `IDValue` - The identifier value of the type specified in the `ProductIDType` element.
 
 ### DescriptiveDetail
+`Mandatory`
+
+Describes the product form and metadata such as title, content description, and authorship.
 
 #### ProductComposition
 
